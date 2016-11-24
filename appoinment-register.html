@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>预约挂号陪诊</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/self-adaption.js"></script>
+</head>
+<body>
+    <!--顶部导航-->
+    <header>
+        <div class="header">
+            <a href="javascript:history.back();" class="return"><img src="images/return.png"/></a>
+            <h4>预约挂号陪诊</h4>
+        </div>
+    </header>
+    <form action="" method="" name="add-person-info" class="frm">
+        <section>
+            <div class="add-person clear">
+                <p class="person-input">
+                    <span>就诊人*</span>
+                    <input type="text" id="username" placeholder="请输入姓名" value=""/>
+                    <img src="images/del.png" class="del" id="del"/>
+                </p>
+                <p class="person-input">
+                    <span>手机号码</span>
+                    <input type="tel" id="tel" placeholder="请输入手机号" value=""/>
+                </p>
+                <p class="person-input">
+                    <span>就诊医院*</span>
+                    <input type="text" id="hospital" placeholder="请输入就诊医院" value=""/>
+                </p>
+                <p class="person-input">
+                    <span>就诊科室</span>
+                    <input type="text" id="departments" placeholder="请输入就诊科室" value="" name="reg"/>
+                </p>
+                <p class="person-input">
+                    <span>备注</span>
+                    <textarea class="textarea" id="remark" placeholder="请填写您的其他要求（200字以内)" oninput="limitTextArea(this)" onkeyup="limitTextArea(this)" onkeydown="limitTextArea(this)" onkeypress="limitTextArea(this)"></textarea>
+                </p>
+            </div>
+        </section>
+        <button type="button" class="return-btn" id="submit-order">提交订单</button>
+    </form>
+    <section>
+        <p class="agree-agreement">
+            <input type="checkbox" name="agree" checked="checked"/>
+            <span>同意《健康加医如亲陪诊协议》</span>
+        </p>
+    </section>
+    <section id="confirm">
+        <div class="confirm-show">
+            <div class="confirm-info">
+                <p class="confirm-info-tit">请输入正确信息</p>
+                <p class="confirm-info-btn">确定</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/public.js"></script>
+</html>

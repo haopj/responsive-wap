@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>选择就诊人</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/self-adaption.js"></script>
+</head>
+<body>
+    <!--顶部导航-->
+    <header>
+        <div class="header">
+            <a href="javascript:history.back();" class="return"><img src="images/return.png"/></a>
+            <h4>选择就诊人</h4>
+            <a href="#" class="add">添加</a>
+        </div>
+    </header>
+    <section>
+        <div class="check-person">
+            <p class="checked"><input type="radio" name="check_person" value=""/></p>
+            <div class="person-info">
+                <p><span class="person-info-tit">就诊人</span><span>张三</span></p>
+                <p><span class="person-info-tit">手机号码</span><span>18888888888</span></p>
+                <p><span class="person-info-tit">关系</span><span>父亲</span></p>
+            </div>
+            <p class="person-info-edit"><a href="#">编辑</a></p>
+        </div>
+        <div class="check-person">
+            <p class="checked"><input type="radio" name="check_person" value=""/></p>
+            <div class="person-info">
+                <p><span class="person-info-tit">就诊人</span><span>李白</span></p>
+                <p><span class="person-info-tit">手机号码</span><span>18888888888</span></p>
+                <p><span class="person-info-tit">关系</span><span>女儿</span></p>
+            </div>
+            <p class="person-info-edit"><a href="#">编辑</a></p>
+        </div>
+    </section>
+    <!--确认-->
+    <footer>
+        <div class="footer-sure">
+            <p>确认</p>
+        </div>
+    </footer>
+</body>
+<script src="js/public.js"></script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>注册</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/self-adaption.js"></script>
+</head>
+<body>
+    <!--顶部导航-->
+    <header>
+        <div class="header">
+            <a href="javascript:history.back();" class="return"><img src="images/return.png"/></a>
+            <h4>注册</h4>
+        </div>
+    </header>
+    <!--登录-->
+    <section id="tab-nav">
+        <!--登录导航-->
+        <div class="login-nav">
+            <ul class="login">
+                <li class="has-btm">用户名注册</li>
+                <li>手机号注册</li>
+            </ul>
+        </div>
+        <!--用户名注册-->
+        <div class="login-content hei-auto">
+            <div class="login-input">
+                <p><img src="images/user.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请设置用户名" class="login-inp"/></p>
+                <img src="images/del.png" class="del" id="login-del-user"/>
+            </div>
+            <div class="login-input">
+                <p><img src="images/password.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请设置6~12位登录密码" class="login-inp"/></p>
+            </div>
+            <div class="login-input">
+                <p><img src="images/password.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请再次确认密码" class="login-inp"/></p>
+            </div>
+        </div>
+        <!--手机号注册-->
+        <div class="login-content hei-auto">
+            <div class="shortcut-login">
+                <div class="login-tel-input">
+                    <p><img src="images/code.png" class="login-user"/></p>
+                    <p><input type="text" placeholder="请输入验证码" class="login-inp"/></p>
+                    <img src="images/del.png" class="del del-code"/>
+                </div>
+                <img src="images/auth-code.png" class="auth-code"/>
+            </div>
+            <div class="shortcut-login">
+                <div class="login-tel-input">
+                    <p><img src="images/tel.png" class="login-tel"/></p>
+                    <p><input type="tel" placeholder="请输入手机号" class="login-inp"/></p>
+                    <img src="images/del.png" class="del del-code"/>
+                </div>
+                <input type="button" class="get-code" id="get-code" value="获取验证码">
+            </div>
+            <div class="login-input">
+                <p><img src="images/sms-code.png" class="login-sms"/></p>
+                <p><input type="text" placeholder="请输入短信验证码" class="login-inp"/></p>
+            </div>
+            <div class="login-input">
+                <p><img src="images/password.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请设置6~12位登录密码" class="login-inp"/></p>
+            </div>
+            <div class="login-input">
+                <p><img src="images/password.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请再次确认密码" class="login-inp"/></p>
+            </div>
+        </div>
+        <section class="agree-register" style="background-color: white">
+            <p class="agree-agreement">
+                <input type="checkbox" name="agree" checked="checked"/>
+                <span><span class="agree-reg">同意协议并注册</span>《健康加医陪诊协议》</span>
+            </p>
+            <!--登录-->
+            <p class="login-shortcut-btn">注册</p>
+        </section>
+    </section>
+</body>
+<script src="js/public.js"></script>
+</html>

@@ -1,0 +1,997 @@
+@charset "utf-8";
+/*公共样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+header,section,footer,label{
+    display: block;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+    color: #cccccc;!important;
+}
+input:-moz-placeholder,textarea:-moz-placeholder{
+    color: #cccccc;!important;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{
+    color: #cccccc;!important;
+}
+textarea{
+    resize: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Microsoft YaHei","宋体","Arial","黑体",sans-serif;
+    color: #5b5b5b;
+    background-color: #f2f2f2;
+}
+a,button,input,select,textarea{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+    border: 0;
+}
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: left;
+}
+
+/*订单状态********全部订单********/
+.order-all{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+}
+.order-all .order-label{
+    margin: .44rem 0 .37rem .44rem;
+    font-size: .3rem;
+}
+.order-all .order-label .order-check{
+    width: 2.36rem;
+    height: .75rem;
+    border-radius: 5px;
+    border: none;
+    color: #999999;
+    background-color: white;
+    font-size: .3rem;
+}
+/*订单号*/
+.order-number{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    /*height: 6.1rem;*/
+    border-top: solid 1px #c8c8c8;
+    border-bottom: solid 1px #c8c8c8;
+    background-color: white;
+}
+.order-number .order{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 731px;
+    height: .98rem;
+    border-bottom: solid 1px #dfdfdf;
+}
+.order-number .order p, .order-number .order-confirm p{
+    float: left;
+    margin-left: .2rem;
+    margin-top: .35rem;
+    font-size: .3rem;
+}
+.order-number .order label{
+    float: left;
+    margin-left: .44rem;
+    margin-top: .3rem;
+    width: 1.25rem;
+    height: .48rem;
+    text-align: center;
+    line-height: .48rem;
+    font-size: .3rem;
+    color: white;
+    border-radius: .08rem;
+}
+.order-number .order b{
+    float: right;
+    margin-top: .35rem;
+    margin-right: .24rem;
+    width: .16rem;
+    height: .27rem;
+}
+.order-number .order b img{
+    float: right;
+    width: .16rem;
+    height: .27rem;
+}
+.order-number .order:last-child{
+    border-bottom: none;
+}
+.label-danger{
+    background-color: #ff7e7e;
+}
+.label-warning{
+    background-color: #ffaf7e;
+}
+.label-success{
+    background-color: #4ad6d4;
+}
+.label-info{
+    background-color: #59b3e6;
+}
+.label-default{
+    background-color: #a3a1a1;
+}
+
+/*订单状态********待确认********/
+.order-number .order-confirm{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 731px;
+    height: .98rem;
+    border-bottom: solid 1px #dfdfdf;
+}
+.order-number .order-confirm .confirm{
+    float: right;
+    margin-right: .27rem;
+}
+.order-number .order-confirm .confirm .label{
+    width: 1.25rem;
+    height: .48rem;
+    text-align: center;
+    line-height: .48rem;
+    font-size: .3rem;
+    color: white;
+    border-radius: .08rem;
+}
+.order-number .order-info{
+    padding-top: .38rem;
+    margin: 0 auto;
+    width: 95%;
+    font-size: .3rem;
+    /*margin-left: .39rem;*/
+}
+.order-number .order-info .order-info-list{
+    margin-bottom: .31rem;
+    margin-left: .2rem;
+    /*border: solid 1px red;*/
+}
+.order-number .order-info .order-info-list .order-info-title{
+    float: left;
+    margin-right: .59rem;
+    width: 1.9rem;
+    color: #999999;
+}
+.order-number .order-info .order-info-list .order-info-content{
+    float: left;
+}
+.order-number .order-info .order-info-list span.mar-r{
+    margin-right: .4rem;
+}
+.order-number .order-info .order-info-list .departments{
+    margin-top: .15rem;
+}
+
+/*订单状态********待确认********/
+.btm{
+    max-width: 731px;
+    border-bottom: solid 1px #dfdfdf;
+}
+.order-number .order-cancel{
+    width: 95%;
+}
+.order-number .order-cancel p{
+    margin: .47rem 0 .56rem 4.55rem;
+    width: 2.5rem;
+    height: .64rem;
+    text-align: center;
+    line-height: .64rem;
+    font-size: .36rem;
+    color: white;
+    border-radius: 5px;
+    background-color: #37bfbd;
+}
+
+/*订单状态********列表-无信息********/
+.order-number .warm-prompt{
+    margin: .82rem 0;
+    text-align: center;
+    font-size: .3rem;
+    color: #999999;
+}
+
+/*服务范围*/
+    /*顶部导航*/
+.header{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: .88rem;
+    background-color: #37bfbd;
+}
+.header a.return{
+    position: absolute;
+    left: 15px;
+    top: -.35rem;
+}
+.header a.return img{
+    width: .22rem;
+    height: .37rem;
+}
+.header h4{
+    line-height: .88rem;
+    text-align: center;
+    font-size: .36rem;
+    color: #fff;
+}
+.service-area{
+    margin: 0 auto;
+    padding: .58rem 0;
+    width: 100%;
+    max-width: 750px;
+    background-color: white;
+}
+.service-area .service-area-title{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 660px;
+    text-indent: 2em;
+    font-size: .2rem;
+}
+.service-area .service-area-list{
+    margin: .36rem auto 0 auto;
+    width: 90%;
+    max-width: 660px;
+    text-indent: 2em;
+    font-size: .2rem;
+}
+.service-area .service-area-list p{
+    margin-top: .18rem;
+}
+
+/*服务说明*/
+.service-mar-t{
+    padding-top: .48rem;
+}
+.service-note-title{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 660px;
+    font-size: .2rem;
+}
+.service-note-title p:first-child{
+    margin-top: 0;
+}
+.service-note-title p{
+    margin-top: .18rem;
+}
+.service-c{
+    color: #37bfbd;
+}
+
+/*选择就诊人*/
+.add{
+    position: absolute;
+    top: .2rem;
+    right: 15px;
+    font-size: .3rem;
+    color: white;
+}
+.check-person{
+    margin: .35rem auto 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 2.91rem;
+    background-color: white;
+    border-top: solid 1px #c8c8c8;
+    border-bottom: solid 1px #c8c8c8;
+}
+.check-person:last-child{
+    margin-bottom: 1rem;
+}
+.check-person p.checked{
+    float: left;
+    margin-top: .5rem;
+    margin-left: .41rem;
+}
+.check-person .person-info{
+    float: left;
+    margin-left: .38rem;
+    font-size: .3rem;
+}
+.check-person .person-info p{
+    margin-top: .4rem;
+}
+.check-person .person-info .person-info-tit{
+    margin-right: .63rem;
+    display: inline-block;
+    width: 1.26rem;
+}
+.check-person .person-info-edit{
+    float: right;
+    margin-right: .4rem;
+    margin-top: .4rem;
+    font-size: .3rem;
+}
+.check-person .person-info-edit a{
+    color: #37bec1;
+}
+.footer-sure{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: .88rem;
+    background-color: #37bfbd;
+}
+.footer-sure p{
+    text-align: center;
+    line-height: .88rem;
+    font-size: .36rem;
+    color: white;
+}
+
+/*收费标准*/
+.fee-scale{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 660px;
+    /*border: solid 1px red;*/
+}
+.fee-scale .fee{
+    margin-top: .51rem;
+    margin-bottom: .73rem;
+    font-size: .3rem;
+    color: #37bfbd;
+}
+.fee-scale .service-content{
+    font-size: .24rem;
+}
+.fee-scale .service-content p{
+    margin-top: .26rem;
+}
+
+/*健康加医如亲陪诊*/
+.header .area-city{
+    position: relative;
+    top: -.4rem;
+    left: .28rem;
+    font-size: .28rem;
+    color: white;
+}
+/*轮播图*/
+.focus{
+    width: 100%;
+    max-width: 750px;
+    height: 5.92rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid 1px #f8f8f8;
+}
+.focus .hd{
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: .32rem;
+    right: .34rem;
+    text-align: right;
+}
+.focus .hd ul{
+    display: inline-block;
+    height: 5px;
+    padding: 3px 5px;
+    font-size: 0;
+    vertical-align: top;
+}
+.focus .hd ul li{
+    display: inline-block;
+    border: solid 1px #37bfbd;
+    width: .35rem;
+    height: .09rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: transparent;
+    margin: 0 5px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.focus .hd ul .on{
+    background: #37bfbd;
+}
+.focus .bd{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.focus .bd li img{
+    width: 100%;
+    max-width: 750px;
+    vertical-align: top;
+    background: url(../images/loading.gif) center center no-repeat;
+}
+.focus .bd li a{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 取消链接高亮 */
+}
+.subscribe{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 2.89rem;
+    background-color: white;
+    /*border: solid 1px red;*/
+}
+.subscribe .subscribe-way img.phone-subscribe{
+    width: 1.33rem;
+    height: 1.3rem;
+}
+.subscribe .subscribe-way img.appointment{
+    margin-top: .08rem;
+    width: 1.22rem;
+    height: 1.22rem;
+}
+.subscribe .subscribe-way{
+    float: left;
+    padding-top: .14rem;
+    margin-top: .32rem;
+    width: 50%;
+    height: 2.29rem;
+    box-sizing: border-box;
+}
+.subscribe .subscribe-way:first-child{
+    border-right: solid 1px #dedede;
+}
+.subscribe .subscribe-way p{
+    text-align: center;
+    font-size: .28rem;
+    color: #5b5b5b;
+}
+.subscribe .subscribe-way .subscribe-text{
+    margin-top: .32rem;
+}
+.service-nav{
+    margin: .05rem auto 1rem auto;
+    width: 100%;
+    max-width: 750px;
+    height: 1.34rem;
+    background-color: white;
+}
+.service-nav li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    line-height: 1.34rem;
+    font-size: .32rem;
+}
+.service-nav li a{
+    color: #37bec1;
+}
+/*弹出框*/
+.confirm-show{
+    position: absolute;
+    top: 0;
+    z-index: 98;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.confirm-show .confirm-tip{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 6.75rem;
+    height: 3.76rem;
+    background: white;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+.confirm-show .confirm-tip .confirm-tip-title{
+    width: 100%;
+    height: .88rem;
+    background-color: #f0f0f0;
+}
+.confirm-show .confirm-tip .confirm-tip-title p{
+    text-align: center;
+    line-height: .88rem;
+    font-size: .36rem;
+    color: #666;
+}
+.confirm-show .confirm-tip .call-number{
+    margin-top: .77rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #666666;
+}
+.confirm-show .confirm-tip .confirm-btn{
+    margin-top: .6rem;
+    width: 100%;
+    max-width: 750px;
+    height: .64rem;
+}
+.confirm-show .confirm-tip .confirm-btn p{
+    font-size: .3rem;
+}
+.confirm-show .confirm-tip .confirm-btn p:last-child{
+    float: right;
+}
+.confirm-show .confirm-tip .confirm-btn .btn-public, .confirm-show a{
+    text-align: center;
+    line-height: .64rem;
+    width: 2.5rem;
+    height: .64rem;
+    color: #ffffff;
+    border-radius: .15rem;
+}
+.reset{
+    float: left;
+    margin-left: .59rem;
+    background-color: #ff6666;
+}
+.ensure{
+    float: right;
+    margin-right: .59rem;
+    background-color: #37bfbd;
+}
+
+/*提交成功*/
+.submit-success{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 7.26rem;
+    background-color: white;
+    border-bottom: solid 1px #c8c8c8;
+}
+.submit-success .success-statement{
+    padding-top: .69rem;
+    padding-bottom: .82rem;
+}
+.submit-success .success-statement p{
+    text-align: center;
+}
+.submit-success .success-statement .success-img{
+    width: 1.51rem;
+    height: 1.51rem;
+}
+.submit-success .success-statement .success-tip{
+    font-size: .48rem;
+    color: #37bec1;
+}
+.success-tip-content{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 631px;
+}
+.success-tip-content p{
+    margin-bottom: .35rem;
+    font-size: .3rem;
+}
+.success-tip-content .tip{
+    float: left;
+}
+.success-tip-content .tip-content{
+    float: left;
+    margin-bottom: .35rem;
+    width: 82%;
+    max-width: 540px;
+    font-size: .3rem;
+    color: #ff6666;
+}
+.return-btn{
+    margin: .67rem auto 0 auto;
+    display: block;
+    width: 90%;
+    max-width: 655px;
+    height: 1rem;
+    color: white;
+    font-size: .44rem;
+    text-align: center;
+    line-height: 1rem;
+    background-color: #37bfbd;
+    border-radius: .15rem;
+}
+
+/*添加就诊人*/
+.add-person{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    /*height: 7.27rem;*/
+    background-color: white;
+    border-bottom: solid 1px #c8c8c8;
+}
+.add-person .person-input{
+    margin: 0 auto;
+    padding: .5rem 0;
+    width: 90%;
+    max-width: 705px;
+    font-size: .3rem;
+    border-bottom: solid 1px #dfdfdf;
+    /*border: solid 1px red;*/
+}
+.add-person .person-input span{
+    float: left;
+    margin-left: .05rem;
+    display: inline-block;
+    width: 1.39rem;
+}
+.add-person .person-input input,textarea{
+    width: 4.5rem;
+    text-indent: 1em;
+    font-size: .3rem;
+}
+.add-person .person-input .del{
+    width: .33rem;
+    height: .33rem;
+}
+.add-person .person-input .textarea{
+    height: 1.3rem;
+}
+.add-person .person-input:last-child{
+    border-bottom: none;
+}
+.agree-agreement{
+    margin-top: .35rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #37bec1;
+}
+.agree-agreement input[type=checkbox]{
+    margin-right: .18rem;
+}
+
+/*编辑就诊人信息*/
+.relation{
+    float: left;
+    margin-right: .29rem;
+    width: .83rem;
+    height: .83rem;
+    text-align: center;
+    line-height: .83rem;
+    background-color: #cccccc;
+    color: white;
+    border-radius: 50%;
+}
+.confirm-info{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 5.3rem;
+    height: 2.24rem;
+    background: white;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+.confirm-info .confirm-info-tit{
+    height: 1.38rem;
+    text-align: center;
+    line-height: 1.38rem;
+    font-size: .3rem;
+    color: #666666;
+    border-bottom: solid 1px #d3d3d4;
+}
+.confirm-info .confirm-info-btn{
+    height: .85rem;
+    text-align: center;
+    line-height: .85rem;
+    font-size: .36rem;
+    color: #37bfbd;
+}
+.appo-mar-t{
+    border-top: solid 1px #c8c8c8;
+    margin-top: .28rem;
+}
+.change-person{
+    color: #37bfbd;
+}
+.change-input-w{
+    width: 65%;
+}
+input[disabled]{
+    background-color: transparent;
+}
+.rdo{
+    display: none;
+}
+
+/*支付*/
+.pay-order{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 4.6rem;
+    background-color: white;
+    border-bottom: solid 1px #c8c8c8;
+}
+.pay-order .success-tip-content{
+    padding-top: .78rem;
+}
+.pay-order .success-tip-content .pay-money{
+    color: #ff6666;
+}
+.pay-order .success-tip-content .tip-content{
+    color: #999999;
+}
+
+/*登录*/
+.login-nav{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: .89rem;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) ;
+}
+.login-nav .login{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 662px;
+    height: .89rem;
+}
+.login-nav .login li{
+    float: left;
+    width: 45%;
+    font-size: .32rem;
+    line-height: .89rem;
+    text-align: center;
+}
+.has-btm{
+    border-bottom: solid .05rem #37bfbd;
+    color: #37bfbd;
+}
+.login-nav .login li:last-child{
+    float: right;
+}
+.login-content{
+    margin: .23rem auto 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 10.06rem;
+    background-color: white;
+    border-top: solid 1px #cfcfcf;
+    display: none;
+}
+.login-content .login-input{
+    margin: 0 auto .2rem auto;
+    width: 90%;
+    max-width: 662px;
+    height: .88rem;
+    border: solid 1px #d2d2d2;
+    border-radius: 5px;
+}
+.login-content .login-input:first-child{
+    margin-top: .62rem;
+}
+.login-content .login-input .login-user{
+    float: left;
+    margin: .23rem .15rem 0 .26rem;
+    width: .36rem;
+    height: .4rem;
+}
+.login-content .login-input .login-inp{
+    float: left;
+    /*border: solid 1px red;*/
+    width: 5.29rem;
+    height: .87rem;
+    font-size: .28rem;
+}
+.login-content .login-input .del{
+    float: left;
+    margin-top: .26rem;
+    width: .33rem;
+    height: .33rem;
+}
+.login-content .forget-password{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 662px;
+    text-align: right;
+    font-size: .28rem;
+}
+.login-content .forget-password a{
+    color: #37bfbd;
+}
+.login-content .login-btn{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 662px;
+    height: .99rem;
+    font-size: .44rem;
+    text-align: center;
+    line-height: .99rem;
+    color: #37bfbd;
+    background-color: #c7f7f6;
+    border: solid 1px #37bfbd;
+    border-radius: 5px;
+}
+.login-content #login-btn{
+    margin: .4rem auto .3rem auto;
+    background-color: #37bfbd;
+    color: white;
+}
+.more-way{
+    margin: 1.04rem auto 0 auto;
+    width: 80%;
+    height: 20px;
+    /*border:solid 1px red;*/
+}
+.more-way .more-way-text{
+    padding-left: .18rem;
+    font-size: .28rem;
+    text-align: center;
+    background: url("../images/bg-line.png") no-repeat center center;
+    background-size: 5.41rem 1px;
+}
+.more-way .login-more-way{
+    margin-top: .62rem;
+}
+.more-way .login-more-way span{
+    margin-left: .5rem;
+}
+.more-way .login-more-way img{
+    width: 1.14rem;
+    height: 1.14rem;
+}
+/*手机快捷登录*/
+ .shortcut-login{
+    margin: 0 auto .2rem auto;
+    width: 90%;
+    max-width: 662px;
+    height: .88rem;
+}
+ .shortcut-login:first-child{
+    margin-top: .62rem;
+}
+ .login-tel-input{
+    float: left;
+    width: 4.46rem;
+    height: .88rem;
+    border: solid 1px #d2d2d2;
+    border-radius: 5px;
+}
+ .login-tel-input .login-user{
+    float: left;
+    margin: .23rem .15rem 0 .26rem;
+    width: .36rem;
+    height: .4rem;
+}
+ .login-tel-input .login-inp{
+    float: left;
+    width: 3.17rem;
+    height: .88rem;
+    font-size: .28rem;
+}
+ .shortcut-login .login-tel-input .del{
+    float: left;
+    margin-top: .26rem;
+    width: .33rem;
+    height: .33rem;
+}
+ .shortcut-login .auth-code{
+    float: right;
+    width: 2.02rem;
+    height: .88rem;
+}
+.login-tel{
+    float: left;
+    margin: .22rem .19rem 0 .3rem;
+    width: .28rem;
+    height: .4rem;
+}
+ .shortcut-login .get-code{
+    float: right;
+    width: 2.02rem;
+    height: .88rem;
+    font-size: .28rem;
+    color: white;
+    background-color: #37bfbd;
+    border-radius: 5px;
+}
+.login-sms{
+    float: left;
+    margin: .31rem .19rem 0 .3rem;
+    width: .34rem;
+    height: .22rem;
+}
+.login-shortcut-btn{
+    margin: .44rem auto 0 auto;
+    width: 90%;
+    max-width: 662px;
+    height: .98rem;
+    background-color: #37bfbd;
+    color: white;
+    text-align: center;
+    line-height: .98rem;
+    font-size: .44rem;
+    border-radius: 5px;
+}
+
+/*修改密码*/
+.forget-psd{
+    margin: .23rem auto 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 10.06rem;
+    background-color: white;
+}
+.forget-psd .login-input{
+    margin: 0 auto .2rem auto;
+    width: 90%;
+    max-width: 662px;
+    height: .88rem;
+    border: solid 1px #d2d2d2;
+    border-radius: 5px;
+}
+.forget-psd .login-input .login-user{
+    float: left;
+    margin: .23rem .15rem 0 .26rem;
+    width: .36rem;
+    height: .4rem;
+}
+.forget-psd .login-input .login-inp{
+    float: left;
+    width: 5.29rem;
+    height: .87rem;
+    font-size: .28rem;
+}
+
+/*忘记密码*/
+.confirm-alter{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 5.3rem;
+    height: 1.26rem;
+    background: white;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+.confirm-alter .confirm-alter-info{
+    text-align: center;
+    line-height: 1.26rem;
+    font-size: .3rem;
+    color: #666;
+}
+
+/*注册*/
+.agree-register{
+    width: 100%;
+    margin: -.35rem auto 0 auto;
+    padding-bottom: .5rem;
+    max-width: 750px;
+    background-color: white;
+}
+.agree-register span.agree-reg{
+    color: #5b5b5b;
+}
+.hei-auto{
+    height: auto;
+    padding-bottom: .2rem;
+}

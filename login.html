@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>登录</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/self-adaption.js"></script>
+</head>
+<body>
+    <!--顶部导航-->
+    <header>
+        <div class="header">
+            <a href="javascript:history.back();" class="return"><img src="images/return.png"/></a>
+            <h4>登录</h4>
+        </div>
+    </header>
+    <!--登录-->
+    <section id="tab-nav">
+        <!--登录导航-->
+        <div class="login-nav">
+            <ul class="login">
+                <li class="has-btm">普通登录</li>
+                <li>手机快捷登录</li>
+            </ul>
+        </div>
+        <!--普通登录输入框-->
+        <div class="login-content">
+            <div class="login-input">
+                <p><img src="images/user.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请输入您的用户名、手机号" class="login-inp"/></p>
+                <img src="images/del.png" class="del" id="login-del-user"/>
+            </div>
+            <div class="login-input">
+                <p><img src="images/password.png" class="login-user"/></p>
+                <p><input type="text" placeholder="请输入您的密码" class="login-inp"/></p>
+            </div>
+            <p class="forget-password"><a href="#">忘记密码？</a></p>
+            <!--按钮组-->
+            <p class="login-btn" id="login-btn">登录</p>
+            <p class="login-btn">注册</p>
+            <!--更多登录方式-->
+            <div class="more-way">
+                <p class="more-way-text">更多登录方式</p>
+                <div class="login-more-way">
+                    <span><img src="images/qq-login.png"/></span>       <!--qq登录-->
+                    <span><img src="images/weChat-login.png"/></span>   <!--weChat登录-->
+                    <span><img src="images/yaofang-login.png"/></span>  <!--药房网登录-->
+                </div>
+            </div>
+        </div>
+        <!--手机快捷登录-->
+        <div class="login-content">
+            <div class="shortcut-login">
+                <div class="login-tel-input">
+                    <p><img src="images/code.png" class="login-user"/></p>
+                    <p><input type="text" placeholder="请输入验证码" class="login-inp"/></p>
+                    <img src="images/del.png" class="del del-code"/>
+                </div>
+                <img src="images/auth-code.png" class="auth-code"/>
+            </div>
+            <div class="shortcut-login">
+                <div class="login-tel-input">
+                    <p><img src="images/tel.png" class="login-tel"/></p>
+                    <p><input type="tel" placeholder="请输入手机号" class="login-inp"/></p>
+                    <img src="images/del.png" class="del del-code"/>
+                </div>
+                <input type="button" class="get-code" id="get-code" value="获取验证码">
+            </div>
+            <div class="login-input">
+                <p><img src="images/sms-code.png" class="login-sms"/></p>
+                <p><input type="text" placeholder="请输入短信验证码" class="login-inp"/></p>
+            </div>
+            <!--登录-->
+            <p class="login-shortcut-btn">登录</p>
+        </div>
+    </section>
+</body>
+<script src="js/public.js"></script>
+</html>

@@ -1,0 +1,28 @@
+/*底部导航*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: .98rem;
+    background-color: #37bfbd;
+}
+.footer .footer-home{
+    float: left;
+    width: 50%;
+    height: .98rem;
+}
+.footer .footer-home p{
+    text-align: center;
+}
+.footer .footer-home p.footer-icon{
+    margin-top: -.45rem;
+}
+.footer .footer-home p.footer-icon img{
+    width: .45rem;
+    height: .37rem;
+}
+.footer .footer-home p.footer-main{
+    margin-top: -.2rem;
+    font-size: .22rem;
+    color: white;
+}
